@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Алексей Благов](https://up.htmlacademy.ru/adaptive/16/user/937085).
-* Наставник: `Неизвестно`.
+* Наставник: [Александр Юдин](https://htmlacademy.ru/profile/a-yudin).
 
 ---
 
