@@ -7,22 +7,22 @@
 <body>
     <header class="page-header">
       <div class="logo">
-          <a class="logo-link" href="#">PINK</a>
-          <button class="logo-show" type="button">Открыть меню</button>
+          <a class="logo_link" href="#">PINK</a>
       </div>
         <nav class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
+          <button class="main-nav__menu-toggle" type="button">Открыть/Закрыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
               <a href="index.html">Главная</a>
             </li>
-            <li class="site-list__item site-list__item-active">
-              <a href="#">Фотографии</a>
+            <li class="main-nav__item active">
+              <a>Фотографии</a>
             </li>
-            <li class="site-list__item">
+            <li class="main-nav__item">
               <a href="form.html">Конкурс</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">HTML ACADEMY</a>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
             </li>
           </ul>
         </nav>
@@ -30,57 +30,78 @@
     </header>
     <main class="page-main">
         <div class="photo">
-            <p class="photo-message">Взгляните на фотографии, которые выкладывают пользователи!
+            <p class="photo__msg">Взгляните на фотографии, которые выкладывают пользователи!
                 Видите, как не хватает ваших?</p>
-            <ul class="photo-list">
-                <li class="photo-list__item">
-                    <img class="photo-list__day" src="img/panorama.jpg">
-                    <adress class="photo-list__name">Анна</adress>
-                    <time class="photo-list__time">(5 минут назад)</time>
-                    <blockquote> class="photo-list-massege">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
-                    <a class="photo-list__like" href="#">Нравится:215</a>
+            <ul class="photo__list">
+                <li class="phost">
+                  <article class="phost__item">
+                    <img class="phost__img" src="img/panorama.jpg">
+                    <adress class="phost__name">Анна</adress>
+                    <time class="phost__time">(5 минут назад)</time>
+                    <blockquote class="phost__msg">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
+                    <button class="phost__like" href="#" type="button">Like</button>
+                    <p>Нравится:215</p>
+                  </article>
                 </li>
-                <li class="photo-list__item">
-                    <img src="img/photo-1.jpg">
-                    <adress class="photo-list__name">Левон</adress>
-                    <time class="photo-list__time">(5 часов назад)</time>
-                    <blockquote class="photo-list-massege">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
-                    <a class="photo-list__like" href="#">Нравится:356</a>
+                <li class="phost">
+                    <article class="phost__item">
+                        <img class="phost__img" src="img/photo-1.jpg">
+                        <adress  class="phost__name">Левон</adress>
+                        <time class="phost__time">(5 часов назад)</time>
+                        <blockquote class="phost-msg">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
+                        <button class="phost__like" href="#" type="button">Like</button>
+                        <p>Нравится:356</p>
+                    </article>
                 </li>
-                <li class="photo-list__item">
-                    <img src="img/photo-2.jpg">
-                    <adress class="photo-list__name">Антон</adress>
-                    <time class="photo-list__time">(12 часов назад)</time>
-                    <blockquote class="photo-list-massege">Соседи будут рады!</blockquote>
-                    <a class="photo-list__like" href="#">Нравится:666</a>
+                <li class="phost">
+                  <article class="phost__item">
+                      <img class="phost__img" src="img/photo-2.jpg">
+                      <adress class="phost__name">Антон</adress>
+                      <time class="phost__time">(12 часов назад)</time>
+                      <blockquote class="phost-msg">Соседи будут рады!</blockquote>
+                      <button class="phost__like" href="#" type="button">Like</button>
+                      <p>Нравится:666</p>
+                  </article>
                 </li>
-                <li class="photo-list__item">
-                    <img src="img/photo-3.jpg">
-                    <adress class="photo-list__name">Борис</adress>
-                    <time class="photo-list__time">(20 часов назад)</time>
-                    <blockquote class="photo-list-massege">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
-                    <a class="photo-list__like" href="#">Нравится:215</a>
+                <li class="phost">
+                    <article class="phost__item">
+                        <img class="phost__img" src="img/photo-3.jpg">
+                        <adress class="phost__name">Борис</adress>
+                        <time class="phost__time">(20 часов назад)</time>
+                        <blockquote class="phost-msg">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
+                        <button class="phost__like" href="#" type="button">Like</button>
+                        <p>равится:215</p>
+                    </article>
                 </li>
-                <li class="photo-list__item">
-                    <img src="img/photo-4.jpg">
-                    <adress class="photo-list__name">Сергей</adress>
-                    <time class="photo-list__time">(25 часов назад)</time>
-                    <blockquote class="photo-list-massege">Самая кубанская в мире!</blockquote>
-                    <a class="photo-list__like" href="#">Нравится:4</a>
+                <li class="phost">
+                    <article class="phost__item">
+                        <img class="phost__img" src="img/photo-4.jpg">
+                        <adress class="phost__name">Сергей</adress>
+                        <time class="phost__time">(25 часов назад)</time>
+                        <blockquote class="phost-msg">Самая кубанская в мире!</blockquote>
+                        <button class="phost__like" href="#" type="button">Like</button>
+                        <p>Нравится:4</p>
+                    </article>
                 </li>
-                <li class="photo-list__item">
-                    <img src="img/photo-5.jpg">
-                    <adress class="photo-list__name">Максим</adress>
-                    <time class="photo-list__time">(40 часов назад)</time>
-                    <blockquote class="photo-list-massege">Где снег-то?</blockquote>
-                    <a class="photo-list__like" href="#">Нравится:150</a>
+                <li class="phost">
+                    <article class="phost__item">
+                        <img class="phost__img" src="img/photo-5.jpg">
+                        <adress class="phost__name">Максим</adress>
+                        <time class="phost__time">(40 часов назад)</time>
+                        <blockquote class="phost-msg">Где снег-то?</blockquote>
+                        <button class="phost__like" href="#" type="button">Like</button>
+                        <p>Нравится:150</p>
+                    </article>
                 </li>
-                <li class="photo-list__item">
-                    <img src="img/photo-6.jpg">
-                    <adress class="photo-list__name">Надежда</adress>
-                    <time class="photo-list__time">(45 часов назад)</time>
-                    <blockquote class="photo-list-massege">Всем GM и взаимные лайки!</blockquote>
-                    <a class="photo-list__like" href="#">Нравится:2560</a>
+                <li class="phost">
+                    <article class="phost__item">
+                        <img class="phost__img" src="img/photo-6.jpg">
+                        <adress class="phost__name">Надежда</adress>
+                        <time class="phost__time">(45 часов назад)</time>
+                        <blockquote class="phost-msg">Всем GM и взаимные лайки!</blockquote>
+                        <button class="phost__like" href="#" type="button">Like</button>
+                        <p>Нравится:2560</p>
+                    </article>
                 </li>
             </ul>
         </div>
