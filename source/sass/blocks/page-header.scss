@@ -1,0 +1,30 @@
+.page-header{
+    background-color: #283645;
+
+}
+.page-header__top-wrapper{
+    display: flex;
+    padding-bottom:10px;
+}
+.page-header__menu-toggle{
+    font-size: 0;
+    position: absolute;
+    left: 280px;
+    top: 10px;
+}
+.page-header__header{
+    margin:0;
+    background-color:  #283645;
+    color: #ffffff;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 24px;
+    font-weight: 300;
+    padding-top: 35px;
+    padding-left: 76px;
+    padding-right: 76px;
+    padding-bottom: 87px;
+    background-image: url(../../img/bg-back-mobile1x.jpg);
+    background-repeat: no-repeat;
+    background-position-y: -65px;
+}

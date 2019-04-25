@@ -1,0 +1,29 @@
+.main-nav{
+    font-family: Open Sans;
+    line-height: 42px;
+    font-weight: 700;
+    color: #ffffff;
+    text-align: center;
+    
+}
+.main-nav__list{
+    display: inline-block;
+    align-content:center;
+    padding: 0;
+    margin: 0;
+    width: 320px;
+    padding-top: 14px;
+}
+.main-nav__item-link{
+    color: #ffffff;
+    font-family: "Open Sans";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 32px;
+}
+.main-nav__item{
+    text-transform: uppercase;
+    padding-top:15px;
+    padding-bottom:7px;
+
+}
