@@ -1,47 +1,45 @@
-@import"blocks/backdrop.scss";
-@import"blocks/comment.scss";
-@import"blocks/downloads.scss";
-@import"blocks/inform.scss";
-@import"blocks/logo.scss";
-@import"blocks/main-nav.scss";
-@import"blocks/page-footer.scss";
-@import"blocks/page-header.scss";
-@import"blocks/page-main.scss";
-@import"blocks/photo.scss";
-@import"blocks/post.scss";
-@import"blocks/price.scss";
-@import"blocks/slider.scss";
-@import"blocks/social-list.scss";
-@import"blocks/normalize.scss";
-@import"blocks/variables.scss";
+@import "blocks/normalize.scss";
+@import "blocks/variables.scss";
+@import "blocks/outlines.scss";
+@import "blocks/fonts.scss";
+@import "blocks/backdrop.scss";
+@import "blocks/downloads.scss";
+@import "blocks/inform.scss";
+@import "blocks/logo.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/photo.scss";
+@import "blocks/post.scss";
+@import "blocks/social-list.scss";
 
 body {
   margin: 0;
   padding: 0;
-  font-family: Open Sans, Arial, sans-serif;
+  font-style: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: #000000;
   width: 320px;
 }
+
 a {
   text-decoration: none;
 }
+
 ul {
   list-style: none;
 }
+
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;

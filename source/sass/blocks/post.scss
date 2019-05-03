@@ -1,18 +1,13 @@
-.post{
-    background-color:$post-color;
+.post {
+  background-color: $post-color;
 }
-.post__header{
+
+.post__name {
+  font-weight: 700;
 }
-.post__name{
-    font-family: "Open Sans - Bold";
-    font-weight: 700;
-}
-.post__time{
-    font-family: "Open Sans - Light";
-    font-size: 12px;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-.post__msg{
-    font-family: "Open Sans";
+
+.post__time {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
