@@ -3,18 +3,80 @@
   width: 320px;
   background-color: $main-color;
   color: #ffffff;
-  padding-top: 10px;
+  padding-top: 45px;
 }
 
 .downloads__list {
   display: flex;
-  justify-content: space-between;
-  padding: 0;
-  font-size: 0;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 0;
+  width: auto;
+  height: 100px;
+  padding-right: 35px;
+  padding-left: 45px;
+}
+
+.downloads__list-item {
+  display: flex;
+  justify-content: center;
+  width: 33%;
+  height: auto;
 }
 
 .downloads__msg {
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+  margin: 0;
+  padding-top: 21px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+.downloads__link {
+  text-decoration: none;
+  color: white;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 14px;
+  border: 3px solid white;
+  border-radius: 45px;
+  padding-left: 37px;
+  padding-right: 32px;
+}
+
+.downloads__list-iphone {
+  display: inline-block;
+  background-image: url("../img/logo-apple.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 47px;
+  height: 56px;
+  font-size: 0;
+}
+
+.downloads__list-android {
+  display: inline-block;
+  background-image: url("../img/logo-android.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 43px;
+  height: 47px;
+  font-size: 0;
+}
+
+.downloads__list-windows {
+  display: inline-block;
+  background-image: url("../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 44px;
+  height: 41px;
+  font-size: 0;
 }
