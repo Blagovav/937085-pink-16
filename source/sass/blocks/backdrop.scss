@@ -1,10 +1,9 @@
 .backdrop {
-  width: 320px;
-  height: 285px;
+  height: auto;
   background-image: url("../img/bg-back-mobile1x.jpg");
   background-repeat: no-repeat;
   padding-top: 116px;
-  background-color: $main-color;
+  background-color: $header-color;
 }
 
 .backdrop__phone {

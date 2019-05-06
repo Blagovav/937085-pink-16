@@ -1,27 +1,31 @@
 .page-header {
-  background-color: $main-color;
+  background-color: $header-color;
 }
 
 .page-header__top-wrapper {
   display: flex;
-  padding-bottom: 10px;
+  padding-bottom: 3%;
+  justify-content: space-between;
+  align-items: baseline;
+  padding-right: 5%;
+  padding-left: 7%;
+  padding-top: 6%;
 }
 
 .page-header__menu-toggle {
   font-size: 0;
-  position: absolute;
   left: 280px;
   top: 20px;
   width: 24px;
   height: 23px;
-  background-color: $main-color;
+  background-color: $header-color;
   background-image: url("../img/icon-menu-cross.svg");
   border: none;
 }
 
 .page-header__header {
   margin: 0;
-  background-color: $main-color;
+  background-color: $header-color;
   color: #ffffff;
   text-align: center;
   font-size: 24px;
