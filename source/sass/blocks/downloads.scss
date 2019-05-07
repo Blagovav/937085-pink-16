@@ -3,7 +3,7 @@
   width: auto;
   background-color: $header-color;
   color: #ffffff;
-  padding-top: 45px;
+  padding-top: 12%;
 }
 
 .downloads__list {
@@ -12,9 +12,9 @@
   align-items: flex-end;
   margin: 0;
   width: auto;
-  height: 100px;
-  padding-right: 35px;
-  padding-left: 45px;
+  margin-top: 14%;
+  padding-right: 38px;
+  padding-left: 38px;
 }
 
 .downloads__list-item {
@@ -31,7 +31,7 @@
   font-weight: 300;
   line-height: 24px;
   margin: 0;
-  padding-top: 21px;
+  padding-top: 24px;
   padding-left: 30px;
   padding-right: 30px;
   padding-bottom: 30px;
@@ -40,14 +40,14 @@
 
 .downloads__link {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
-  line-height: 18px;
-  padding: 14px;
+  line-height: 13px;
+  padding: 13px;
   border: 3px solid white;
   border-radius: 45px;
-  padding-left: 37px;
-  padding-right: 32px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 
 .downloads__list--iphone {
