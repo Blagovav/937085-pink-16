@@ -10,10 +10,11 @@
   <header class="page-header">
     <div class="page-header__top-wrapper">
       <a class="logo" href="index.html">PINK</a>
+      <button class="page-header__menu-toggle" type="button">Открыть/Закрыть меню</button>
     </div>
     <nav class="main-nav">
       <ul class="main-nav__list list-style-none">
-        <li class="main-nav__item ">
+        <li class="main-nav__item">
           <a  class="main-nav__item-link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
@@ -30,7 +31,74 @@
   </header>
   <main class="page-main">
     <p class="page-main__msg">Конкурс на самое безбашенное путешествие с Пинк</p>
-    <form></form>
+    <form class="main-form" method="post">
+      <p class="main-form__msg">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту карту!</p>
+      <div class="main-form__user">
+          <label class="main-form__user-header" for="surname">Фамилия:</label>
+          <input class="main-form__user-text" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+          <label class="main-form__user-header" for="name" >Имя:</label>
+          <input class="main-form__user-text" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
+          <label class="main-form__user-header" for="patronymic">Отчество:</label>
+          <input class="main-form__user-text" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+      </div>
+      <fieldset class="main-form__progress fieldset-none">
+        <legend class="main-form__progress-header">Ваши безбашенные достижения в путешествии</legend>
+        <ul class="main-form__progress-list list-style-none">
+          <li class="main-form__progress-list-item">
+            <input class="main-form__progress-check visually-hidden" type="checkbox">
+            <label class="main-form__option" for="">Сделал селфи с акулой</label>
+          </li>
+          <li class="main-form__progress-list-item">
+              <input class="main-form__progress-check visually-hidden" type="checkbox">
+              <label class="main-form__option" for="">Обгорел на пляже</label>
+          </li>
+          <li class="main-form__progress-list-item">
+              <input class="main-form__progress-check visually-hidden" type="checkbox">
+              <label class="main-form__option" for="">Видел Чака Норриса</label>
+          </li>
+          <li class="main-form__progress-list-item">
+              <input class="main-form__progress-check visually-hidden" type="checkbox">
+              <label class="main-form__option" for="">Накупил сувениров</label>
+          </li>
+          <li class="main-form__progress-list-item">
+              <input class="main-form__progress-check visually-hidden" type="checkbox">
+              <label class="main-form__option" for="">Удержал башню</label>
+          </li>
+          <l class="main-form__progress-list-item"i>
+              <input class="main-form__progress-check visually-hidden" type="checkbox">
+              <label class="main-form__option" for="">Разгромил отель</label>
+          </l>
+        </ul>
+      </fieldset>
+      <div class="main-form__user-data">
+          <label class="main-form__user-header" for="number">Номер телефона</label>
+          <input class="main-form__user-number" id="number" type="tel" name="number" placeholder="Номер, пожалуйста">
+          <label class="main-form__user-header" for="mail">Адрес почты</label>
+          <input class="main-form__user-number" id="mail" type="email" name="mail" placeholder="Введите почту*" required>
+      </div>
+      <fieldset class="main-form__poll fieldset-none">
+        <legend class="main__form__poll-header">С каким приложением путешествовали?</legend>
+        <ul class="main-form__poll-list list-style-none">
+          <li class="main-form__poll-list-item">
+            <input type="radio" class="main-form__poll-radio" name="form-radio"  id="ios" value="pink для ios">
+            <label class="" for="ios">Pink для IOS</label>
+          </li>
+          <li class="main-form__poll-list-item">
+            <input type="radio" class="main-form__poll-radio" name="form-radio"  id="android" value="pink для android">
+            <label class="" for="android">Pink для Android</label>
+          </li>
+          <li class="main-form__poll-list-item">
+            <input type="radio" class="main-form__poll-radio" name="form-radio"  id="windows" value="pink для ios">
+            <label class="" for="winndows">Windows Phone</label>
+          </li>
+        </ul>
+      </fieldset>
+      <div class="main-form__user-msg">
+        <label class="main-form__user-header" for="write">Опишите свои эмоции</labe>
+        <textarea class="main-form__textarea" id="write" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </div>
+      <button class="main-form__button" type="submit">Отправить форму</button>
+    </form>
   </main>
   <footer class="page-footer">
     <div class="page-footer__bottom-wrapper">
@@ -38,13 +106,13 @@
     </div>
     <ul class="social-list list-style-none">
       <li class="social-list__item">
-        <a class="social-list__link-twitter" href="#">Twitter</a>
+        <a class="social-list__link--twitter" href="#">Twitter</a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link-facebook" href="#">Facebook</a>
+        <a class="social-list__link--facebook" href="#">Facebook</a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link-youtube" href="#">Youtube</a>
+        <a class="social-list__link--youtube" href="#">Youtube</a>
       </li>
     </ul>
     <div class="page-footer__copyright-wrapper">

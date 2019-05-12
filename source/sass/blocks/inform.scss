@@ -3,11 +3,31 @@
   font-weight: 300;
   text-align: center;
   background-color: $post-color;
-  padding: 0;
+  padding-top: 44px;
   margin: 0;
 }
 
+.inform__list-wrapper {
+  padding-top: 95px;
+}
+
 .inform__list {
-  padding: 0;
   text-align: center;
+  position: relative;
+  padding-bottom: 310px;
+}
+
+.inform__list::before {
+  background-image: url("../../img/iphone-screen-mobile1x.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+  left: 80px;
+  bottom: 0;
+  width: 300px;
+  height: 280px;
+}
+
+.inform__lisy-wrapper {
+  padding-top: 90px;
 }

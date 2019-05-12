@@ -33,19 +33,19 @@
   </header>
   <main class="page-main">
     <div class="backdrop">
-      <img class="backdrop__phone" src="../img/iphone-hand-mobile@1x.png" alt="рука с тулефоном">
+      <img class="backdrop__phone" src="img/iphone-hand-mobile@1x.png" alt="рука с тулефоном">
     </div>
     <div class="downloads">
       <a class="downloads__link" href="https://www.apple.com/ru/ios/app-store">Скачать приложение</a>
       <ul class="downloads__list list-style-none">
         <li class="downloads__list-item">
-          <a class="downloads__list--iphone" href="https://www.apple.com/ru/ios/app-store">iPhone</a>
+          <a class="downloads__list downloads__list--iphone" href="https://www.apple.com/ru/ios/app-store">iPhone</a>
         </li>
         <li class="downloads__list-item">
-          <a class="downloads__list--android" href="https://play.google.com/store">Android</a>
+          <a class="downloads__list downloads__list--android" href="https://play.google.com/store">Android</a>
         </li>
         <li class="downloads__list-item">
-          <a class="downloads__list--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?rtc=1">Windows</a>
+          <a class="downloads__list downloads__list--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone?rtc=1">Windows</a>
         </li>
       </ul>
       <p class="downloads__msg">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -74,9 +74,6 @@
         <div class="comment__wrapper">
           <ul class="comment__list list-style-none">
             <li class="comment__list-item">
-              <img src="../../img/iphone-screen-mobile1x.png" alt="картинка комментария">
-            </li>
-            <li class="comment__list-item">
               <h2>Николай петров</h2>
               <p>«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи!
                 А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
@@ -92,38 +89,54 @@
       <section class="price">
         <div class="price__wrapper">
           <table class="price__table">
-            <tr>
-              <th>База 1,99 USD</th>
+            <thead  class="price__header">
+              <tr>
+                <th class="price__value">База <p>1,99 USD</p></th>
+                <th class="price__value">Стандарт <p>3,99 USD</p></th>
+                <th class="price__value">Анлим <p>9,99 USD</p></th>
+              </tr>
+            </thead>
+            <tbody>
+            <tr class="price__service">
+              <td class="price__item">Розовый фильтр</td>
+              <td class="price__item">Розовый фильтр</td>
+              <td class="price__item">Розовый фильтр</td>
             </tr>
-            <tr>
-              <td>Розовый фильтр</td>
-              <td>Смайлики</td>
-              <td>Комментарии</td>
+            <tr class="price__service">
+              <td class="price__item">Смайлики</td>
+              <td class="price__item">Смайлики</td>
+              <td class="price__item">Смайлики</td>
             </tr>
-            <tr>
-              <th>Стандарт 3,99 USD</th>
-            </tr>
-            <tr>
-              <td>Розовый фильтр</td>
-              <td>Смайлики</td>
-              <td>Комментарии</td>
-            </tr>
-            <tr>
-              <th>Анлим 9,99 USD</th>
-            </tr>
-            <tr>
-              <td>Розовый фильтр</td>
-              <td>Смайлики</td>
-              <td>Комментарии</td>
+            <tr class="price__service">
+              <td class="price__item">Комментарии</td>
+              <td class="price__item">Комментарии</td>
+              <td class="price__item">Комментарии</td>
             </tr>
           </table>
-          <p class="price__toggle slider__toggles">
-            <button class="slider__toggle" type="button">1</button>
-            <button class="slider__toggle" type="button">2</button>
-            <button class="slider__toggle" type="button">3</button>
+          <p class="price__toggle comment__toggles">
+            <button class="comment__toggle" type="button">1</button>
+            <button class="comment__toggle" type="button">2</button>
+            <button class="comment__toggle" type="button">3</button>
           </p>
         </div>
       </section>
   </main>
+  <footer class="page-footer">
+    <div class="page-footer__contacts">
+      <p class="page-footer__msg">Остались вопросы? Свяжитесь с нами!</p>
+      <article class="page-footer__phone">
+        <p class="page-footer__header">Звоните:</p>
+        <p class="page-footer__info">+7 (812) 555-66-66</p>
+      </article>
+      <article class="page-footer__phone">
+          <p class="page-footer__header">Пишите:</p>
+          <a class="page-footer__info">mail.htmlacademy.ru</a>
+        </article>
+        <article class="page-footer__phone">
+          <p class="page-footer__header">Приезжайте в гости:</p>
+          <p class="page-footer__info">ул. Большая Конюшенная, 19/8</p>
+        </article>
+    </div>
+  </footer>
 </body>
 </html>

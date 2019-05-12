@@ -1,0 +1,132 @@
+.main-form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 45px;
+  padding-bottom: 15px;
+}
+
+.main-form__msg {
+  width: 280px;
+  margin: 0 auto;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.main-form__user {
+  margin: 0 auto;
+  padding: 28px 0 30px;
+  box-sizing: border-box;
+  border: none;
+  text-align: left;
+}
+
+
+.main-form__user-header {
+  display: block;
+  margin-bottom: 5px;
+  padding-left: 23px;
+  color: $like-color;
+  text-transform: uppercase;
+}
+
+.main-form__user-text,
+.main-form__user-number {
+  box-sizing: border-box;
+  font-size: 18px;
+  line-height: 30px;
+  width: 100%;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  padding: 14px 22px 15px;
+  margin-bottom: 16px;
+}
+
+.main-form__progress-header,
+.main__form__poll-header {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  color: $like-color;
+}
+
+.main-form__progress-list-item,
+.main-form__poll-list-item {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  display: flex;
+  padding-left: 22px;
+  align-items: center;
+  padding-bottom: 32px;
+}
+
+.main-form__progress-check {
+  width: 39px;
+  height: 39px;
+}
+
+.main-form__textarea {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 201px;
+  margin-top: 6px;
+  padding-left: 21px;
+  padding-right: 21px;
+  padding-top: 15px;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+}
+
+.main-form__button {
+  width: 280px;
+  height: 63px;
+  border: 2px solid #2aab6d;
+  background-color: #2aab6d;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.main-form__option {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.main-form__progress {
+  margin: 0 auto;
+  padding: 28px 0 30px;
+  box-sizing: border-box;
+}
+
+.main-form__option::before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-right: 31px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.main-form__option :hover::before,
+.main-form__option:hover::before {
+  border-color: #283645;
+}
+
+.main-form__user-msg {
+  width: 280px;
+  margin: 0 auto;
+  padding: 28px 0 30px;
+  box-sizing: border-box;
+  border: none;
+}
