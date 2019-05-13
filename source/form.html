@@ -45,51 +45,51 @@
         <legend class="main-form__progress-header">Ваши безбашенные достижения в путешествии</legend>
         <ul class="main-form__progress-list list-style-none">
           <li class="main-form__progress-list-item">
-            <input class="main-form__progress-check visually-hidden" type="checkbox">
-            <label class="main-form__option" for="">Сделал селфи с акулой</label>
+            <input class="main-form__progress-check visually-hidden" type="checkbox" id="selfi">
+            <label class="main-form__option" for="selfi">Сделал селфи с акулой</label>
           </li>
           <li class="main-form__progress-list-item">
-              <input class="main-form__progress-check visually-hidden" type="checkbox">
-              <label class="main-form__option" for="">Обгорел на пляже</label>
+              <input class="main-form__progress-check visually-hidden" type="checkbox" id="beach">
+              <label class="main-form__option" for="beach">Обгорел на пляже</label>
           </li>
           <li class="main-form__progress-list-item">
-              <input class="main-form__progress-check visually-hidden" type="checkbox">
-              <label class="main-form__option" for="">Видел Чака Норриса</label>
+              <input class="main-form__progress-check visually-hidden" type="checkbox" id="chak">
+              <label class="main-form__option" for="chak">Видел Чака Норриса</label>
           </li>
           <li class="main-form__progress-list-item">
-              <input class="main-form__progress-check visually-hidden" type="checkbox">
-              <label class="main-form__option" for="">Накупил сувениров</label>
+              <input class="main-form__progress-check visually-hidden" type="checkbox" id="souvenir">
+              <label class="main-form__option" for="souvenir">Накупил сувениров</label>
           </li>
           <li class="main-form__progress-list-item">
-              <input class="main-form__progress-check visually-hidden" type="checkbox">
-              <label class="main-form__option" for="">Удержал башню</label>
+              <input class="main-form__progress-check visually-hidden" type="checkbox" id="tower">
+              <label class="main-form__option" for="tower">Удержал башню</label>
           </li>
           <l class="main-form__progress-list-item"i>
-              <input class="main-form__progress-check visually-hidden" type="checkbox">
-              <label class="main-form__option" for="">Разгромил отель</label>
+              <input class="main-form__progress-check visually-hidden" type="checkbox" id="hotel">
+              <label class="main-form__option" for="hotel">Разгромил отель</label>
           </l>
         </ul>
       </fieldset>
       <div class="main-form__user-data">
-          <label class="main-form__user-header" for="number">Номер телефона</label>
+          <label class="main-form__user-headline" for="number">Номер телефона</label>
           <input class="main-form__user-number" id="number" type="tel" name="number" placeholder="Номер, пожалуйста">
-          <label class="main-form__user-header" for="mail">Адрес почты</label>
+          <label class="main-form__user-headline" for="mail">Адрес почты</label>
           <input class="main-form__user-number" id="mail" type="email" name="mail" placeholder="Введите почту*" required>
       </div>
       <fieldset class="main-form__poll fieldset-none">
         <legend class="main__form__poll-header">С каким приложением путешествовали?</legend>
         <ul class="main-form__poll-list list-style-none">
           <li class="main-form__poll-list-item">
-            <input type="radio" class="main-form__poll-radio" name="form-radio"  id="ios" value="pink для ios">
-            <label class="" for="ios">Pink для IOS</label>
+            <input type="radio" class="main-form__poll-radio visually-hidden" name="form-radio"  id="ios" value="pink для ios">
+            <label class="main-form__radio" for="ios">Pink для IOS</label>
           </li>
           <li class="main-form__poll-list-item">
-            <input type="radio" class="main-form__poll-radio" name="form-radio"  id="android" value="pink для android">
-            <label class="" for="android">Pink для Android</label>
+            <input type="radio" class="main-form__poll-radio visually-hidden" name="form-radio"  id="android" value="pink для android">
+            <label class="main-form__radio" for="android">Pink для Android</label>
           </li>
           <li class="main-form__poll-list-item">
-            <input type="radio" class="main-form__poll-radio" name="form-radio"  id="windows" value="pink для ios">
-            <label class="" for="winndows">Windows Phone</label>
+            <input type="radio" class="main-form__poll-radio visually-hidden" name="form-radio"  id="windows" value="pink для ios">
+            <label class="main-form__radio" for="windows">Windows Phone</label>
           </li>
         </ul>
       </fieldset>
@@ -98,21 +98,22 @@
         <textarea class="main-form__textarea" id="write" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </div>
       <button class="main-form__button" type="submit">Отправить форму</button>
+      <p class="main-form__final-msg"><span class="main-form__star">*</span>-обязательные поля</p>
     </form>
   </main>
   <footer class="page-footer">
     <div class="page-footer__bottom-wrapper">
-      <a class="logo" href="#">PINK</a>
+      <a class="page-footer__logo" href="#">PINK</a>
     </div>
-    <ul class="social-list list-style-none">
-      <li class="social-list__item">
-        <a class="social-list__link--twitter" href="#">Twitter</a>
+    <ul class="social-list list-style-none social-list--footer">
+      <li class="social-list__item social-list__item--footer">
+        <a class="social-list__link social-list__link--twitter social-list__link--footer" href="#">Twitter</a>
       </li>
-      <li class="social-list__item">
-        <a class="social-list__link--facebook" href="#">Facebook</a>
+      <li class="social-list__item social-list__item--footer">
+        <a class="social-list__link social-list__link--facebook social-list__link--footer" href="#">Facebook</a>
       </li>
-      <li class="social-list__item">
-        <a class="social-list__link--youtube" href="#">Youtube</a>
+      <li class="social-list__item social-list__item--footer">
+        <a class="social-list__link social-list__link--youtube social-list__link--footer" href="#">Youtube</a>
       </li>
     </ul>
     <div class="page-footer__copyright-wrapper">

@@ -15,18 +15,38 @@
 
 .main-form__user {
   margin: 0 auto;
-  padding: 28px 0 30px;
+  padding: 34px 0 62px;
   box-sizing: border-box;
   border: none;
   text-align: left;
 }
 
+.main-form__user-data {
+  margin: 0 auto;
+  padding: 11px 0 64px;
+}
 
 .main-form__user-header {
   display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
   margin-bottom: 5px;
-  padding-left: 23px;
+  padding-left: 21px;
+  padding-right: 21px;
   color: $like-color;
+  text-transform: uppercase;
+}
+
+.main-form__user-headline {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 5px;
+  padding-left: 21px;
+  color: $like-color;
+  text-align: left;
   text-transform: uppercase;
 }
 
@@ -34,11 +54,12 @@
 .main-form__user-number {
   box-sizing: border-box;
   font-size: 18px;
+  font-weight: 400;
   line-height: 30px;
   width: 100%;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
-  padding: 14px 22px 15px;
+  padding: 14px 28px 16px;
   margin-bottom: 16px;
 }
 
@@ -48,20 +69,20 @@
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   color: $like-color;
 }
 
-.main-form__progress-list-item,
-.main-form__poll-list-item {
+.main-form__progress-list-item {
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
   display: flex;
   padding-left: 22px;
   align-items: center;
-  padding-bottom: 32px;
+  padding-bottom: 36px;
+  padding-top: 16px;
 }
 
 .main-form__progress-check {
@@ -72,13 +93,16 @@
 .main-form__textarea {
   width: 100%;
   box-sizing: border-box;
-  min-height: 201px;
+  min-height: 203px;
   margin-top: 6px;
-  padding-left: 21px;
-  padding-right: 21px;
-  padding-top: 15px;
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-top: 18px;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
 }
 
 .main-form__button {
@@ -89,6 +113,9 @@
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
+  margin-left: 19px;
+  margin-top: 7px;
+  border-radius: 5px;
   line-height: 30px;
   text-transform: uppercase;
 }
@@ -99,6 +126,7 @@
   vertical-align: middle;
   font-size: 18px;
   line-height: 30px;
+  padding-left: 67px;
 }
 
 .main-form__progress {
@@ -110,23 +138,82 @@
 .main-form__option::before {
   content: "";
   display: inline-block;
+  position: absolute;
   vertical-align: middle;
   width: 35px;
   height: 35px;
   margin-right: 31px;
+  left: -2px;
+  top: -6px;
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
 }
 
-.main-form__option :hover::before,
+.main-form__progress-check:checked + .main-form__option::before {
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 22px 16px;
+  background-position: 7px 8px;
+}
+
 .main-form__option:hover::before {
   border-color: #283645;
 }
 
 .main-form__user-msg {
-  width: 280px;
-  margin: 0 auto;
-  padding: 28px 0 30px;
+  padding: 76px 0 30px;
   box-sizing: border-box;
   border: none;
+}
+
+.main-form__radio {
+  position: relative;
+  padding-left: 67px;
+}
+
+.main-form__poll-list-item {
+  display: flex;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  padding-left: 22px;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 4px;
+}
+
+.main-form__radio::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  vertical-align: middle;
+  width: 35px;
+  height: 35px;
+  margin-right: 31px;
+  left: -2px;
+  top: -6px;
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+  border-radius: 25px;
+}
+
+.main-form__poll-radio:checked + .main-form__radio::before {
+  background-image: url("../img/circle.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  background-size: 22px 16px;
+  background-position: 7px 10px;
+}
+
+.main-form__final-msg {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-top: 33px;
+}
+
+.main-form__star {
+  color: $like-color;
 }
