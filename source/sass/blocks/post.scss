@@ -1,13 +1,17 @@
 .post {
   background-color: $post-color;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto 20px;
+  margin-bottom: 50px;
 }
 
 .post__header {
-  display: flex;
-  justify-content: flex-start;
-  padding-left: 11%;
-  padding-top: 4%;
+  padding-top: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: left;
 }
 
 .post__name {
@@ -21,22 +25,26 @@
 }
 
 .post__msg {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   text-align: initial;
   font-size: 14px;
   font-weight: 300;
+  padding-left: 14px;
+  padding-right: 8px;
 }
 
 .post__footer {
   display: flex;
+  align-content: center;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-around;
   color: $like-color;
   font-size: 12px;
   font-weight: 400;
   line-height: 24px;
   text-transform: uppercase;
+  padding-right: 122px;
+  padding-left: 1px;
 }
 
 .post__like {
@@ -46,4 +54,25 @@
   height: 12px;
   background-color: $post-color;
   background-image: url("../img/icon-heart.svg");
+}
+
+.post__img--best {
+  width: 100%;
+  position: relative;
+}
+
+.post__img--best::after {
+  content: "Панорама дня";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  z-index: 1;
+}
+
+.post-img--best::before {
+  content: "";
 }

@@ -1,8 +1,8 @@
 .main-form {
-  display: flex;
-  flex-direction: column;
   padding-top: 45px;
   padding-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .main-form__msg {
@@ -32,8 +32,6 @@
   font-weight: 400;
   line-height: 30px;
   margin-bottom: 5px;
-  padding-left: 21px;
-  padding-right: 21px;
   color: $like-color;
   text-transform: uppercase;
 }
@@ -69,9 +67,10 @@
   line-height: 18px;
   text-transform: uppercase;
   text-align: center;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 7px;
+  padding-right: 7px;
   color: $like-color;
+  background-color: #f2f2f2;
 }
 
 .main-form__progress-list-item {
@@ -79,7 +78,6 @@
   font-weight: 400;
   line-height: 30px;
   display: flex;
-  padding-left: 22px;
   align-items: center;
   padding-bottom: 36px;
   padding-top: 16px;
@@ -113,8 +111,6 @@
   color: #ffffff;
   font-size: 18px;
   font-weight: 700;
-  margin-left: 19px;
-  margin-top: 7px;
   border-radius: 5px;
   line-height: 30px;
   text-transform: uppercase;
@@ -126,13 +122,14 @@
   vertical-align: middle;
   font-size: 18px;
   line-height: 30px;
-  padding-left: 67px;
+  padding-left: 60px;
 }
 
 .main-form__progress {
   margin: 0 auto;
   padding: 28px 0 30px;
   box-sizing: border-box;
+  background-color: #f2f2f2;
 }
 
 .main-form__option::before {
@@ -216,4 +213,9 @@
 
 .main-form__star {
   color: $like-color;
+  margin-right: 14px;
+}
+
+.main-form__poll {
+  background-color: #f2f2f2;
 }

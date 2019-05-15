@@ -1,5 +1,12 @@
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: column;
+}
+
 .price__table {
-  width: 840px;
   box-sizing: border-box;
   border-collapse: collapse;
   border-spacing: 0;
@@ -15,7 +22,7 @@
 
 .price__value {
   box-sizing: border-box;
-  min-width: 278px;
+  min-width: 276px;
   padding-top: 16px;
   padding-bottom: 20px;
   border-left: 2px solid #e5e5e5;
@@ -32,9 +39,38 @@
   padding-top: 16px;
   padding-bottom: 13px;
   padding-left: 22px;
+  padding-right: 22px;
+  min-width: 276px;
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   border: 2px solid #e5e5e5;
   border-top: none;
+}
+
+.price__hit {
+  position: relative;
+}
+
+.price__hit::before {
+  content: "Хит";
+  position: absolute;
+  font-size: 10px;
+  font-weight: 400;
+  left: 14px;
+  bottom: 60px;
+  line-height: 21.21px;
+  text-transform: uppercase;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.price__hit::after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/bg-hit.svg");
+  width: 74px;
+  height: 73px;
+  top: 0;
+  left: 0;
 }

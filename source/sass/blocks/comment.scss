@@ -4,9 +4,17 @@
 
 .comment__toggle {
   font-size: 0;
-  background-color: #ffffff;
-  border: 3px solid #283645;
-  border-radius: 25px;
+  background-color: #b5babe;
+  border: 2px solid transparent;
+  opacity: 0.3;
+  border-radius: 50px;
   width: 15px;
   height: 15px;
+  cursor: pointer;
+}
+
+.comment__togle:hover,
+.comment__togle:active {
+  border: 2px solid #283645;
+  background-color: #ffffff;
 }

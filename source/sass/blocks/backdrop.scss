@@ -1,12 +1,21 @@
 .backdrop {
+  position: relative;
   height: auto;
   background-image: url("../img/bg-back-mobile1x.jpg");
   background-repeat: no-repeat;
-  padding-top: 35%;
+  padding-top: 404px;
+  background-size: cover;
   background-color: $header-color;
   background-position-y: -62px;
 }
 
-.backdrop__phone {
-  margin-right: 60px;
+.backdrop::before {
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  content: "";
+  left: 5px;
+  bottom: 30px;
+  width: 307px;
+  height: 284px;
 }
