@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .social-list__item {
@@ -14,6 +14,10 @@
   align-items: center;
   justify-content: space-around;
   font-size: 0;
+}
+
+.social-list__item:not(:last-child) {
+  margin-right: 18px;
 }
 
 .social-list__link {
