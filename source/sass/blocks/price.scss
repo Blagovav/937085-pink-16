@@ -12,6 +12,14 @@
   border-spacing: 0;
 }
 
+.price__toggle {
+  margin: 0;
+  padding-top: 45px;
+  padding-bottom: 50px;
+  background-color: $post-color;
+  width: 100%;
+}
+
 .price__header {
   font-size: 18px;
   line-height: 30px;

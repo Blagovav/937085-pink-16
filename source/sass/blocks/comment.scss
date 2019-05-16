@@ -1,20 +1,23 @@
+.comment {
+  margin-bottom: 138px;
+}
+
 .comment__list {
   padding-top: 20px;
 }
 
 .comment__toggle {
   font-size: 0;
-  background-color: #b5babe;
-  border: 2px solid transparent;
+  background-color: #283645;
+  border: 2px solid #ffffff;
   opacity: 0.3;
-  border-radius: 50px;
+  border-radius: 100px;
   width: 15px;
   height: 15px;
   cursor: pointer;
 }
 
-.comment__togle:hover,
-.comment__togle:active {
+.comment__togle:hover:focus:active {
   border: 2px solid #283645;
   background-color: #ffffff;
 }
