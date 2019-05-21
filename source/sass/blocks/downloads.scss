@@ -3,7 +3,7 @@
   width: auto;
   background-color: $header-color;
   color: #ffffff;
-  padding-top: 12%;
+  padding-top: 25px;
 }
 
 .downloads__list {
@@ -26,7 +26,7 @@
 }
 
 .downloads__list-item:not(:last-child) {
-  margin-right: 34px;
+  margin-right: 10.06%;
 }
 
 .downloads__msg {
@@ -35,8 +35,8 @@
   line-height: 24px;
   margin: 0;
   padding-top: 24px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 9.375%;
+  padding-right: 9.375%;
   padding-bottom: 30px;
   text-align: center;
 }

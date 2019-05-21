@@ -15,67 +15,76 @@
     <nav class="main-nav">
       <ul class="main-nav__list list-style-none">
         <li class="main-nav__item">
-          <a  class="main-nav__item-link" href="index.html">Главная</a>
+          <a  class="main-nav__link" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
-          <a  class="main-nav__item-link" href="photo.html">Фотографии</a>
+          <a  class="main-nav__link" href="photo.html">Фотографии</a>
         </li>
         <li class="main-nav__item active">
-          <a class="main-nav__item-link">Конкурс</a>
+          <a class="main-nav__link">Конкурс</a>
         </li>
         <li class="main-nav__item">
-          <a class="main-nav__item-link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
+          <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML ACADEMY</a>
         </li>
       </ul>
     </nav>
   </header>
   <main class="page-main">
     <p class="page-main__msg">Конкурс на самое безбашенное путешествие с Пинк</p>
-    <form class="main-form" method="post">
+    <form class="main-form" method="post" action="https://echo.htmlacademy.ru/">
       <p class="main-form__msg">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту карту!</p>
-      <div class="main-form__user">
-          <label class="main-form__user-header" for="surname">Фамилия:</label>
-          <input class="main-form__user-text" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
-          <label class="main-form__user-header" for="name" >Имя:</label>
-          <input class="main-form__user-text" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
-          <label class="main-form__user-header" for="patronymic">Отчество:</label>
-          <input class="main-form__user-text" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
+      <div class ="input-field">
+        <label class="input-field__header" for="surname">Фамилия:</label>
+        <input class="input-field__text" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
+      </div>
+      <div class="input-field">
+        <label class="input-field__header" for="name" >Имя:</label>
+        <input class="input-field__text" id="name" type="text" name="name" placeholder="Введите ваше имя*" required>
+      </div>
+      <div class="input-field">
+        <label class="input-field__header" for="patronymic">Отчество:</label>
+        <input class="input-field__text" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
       </div>
       <fieldset class="main-form__progress fieldset-none">
         <legend class="main-form__progress-header">Ваши безбашенные достижения в путешествии</legend>
         <ul class="main-form__progress-list list-style-none">
-          <li class="main-form__progress-list-item">
+          <li class="main-form__progress-item">
             <input class="main-form__progress-check visually-hidden" type="checkbox" id="selfi">
             <label class="main-form__option" for="selfi">Сделал селфи с акулой</label>
           </li>
-          <li class="main-form__progress-list-item">
+          <li class="main-form__progress-item">
               <input class="main-form__progress-check visually-hidden" type="checkbox" id="beach">
               <label class="main-form__option" for="beach">Обгорел на пляже</label>
           </li>
-          <li class="main-form__progress-list-item">
+          <li class="main-form__progress-item">
               <input class="main-form__progress-check visually-hidden" type="checkbox" id="chak">
               <label class="main-form__option" for="chak">Видел Чака Норриса</label>
           </li>
-          <li class="main-form__progress-list-item">
+          <li class="main-form__progress-item">
               <input class="main-form__progress-check visually-hidden" type="checkbox" id="souvenir">
               <label class="main-form__option" for="souvenir">Накупил сувениров</label>
           </li>
-          <li class="main-form__progress-list-item">
+          <li class="main-form__progress-item">
               <input class="main-form__progress-check visually-hidden" type="checkbox" id="tower">
               <label class="main-form__option" for="tower">Удержал башню</label>
           </li>
-          <l class="main-form__progress-list-item"i>
+          <li class="main-form__progress-item">
               <input class="main-form__progress-check visually-hidden" type="checkbox" id="hotel">
               <label class="main-form__option" for="hotel">Разгромил отель</label>
-          </l>
+          </li>
         </ul>
       </fieldset>
-      <div class="main-form__user-data">
-          <label class="main-form__user-headline" for="number">Номер телефона</label>
-          <input class="main-form__user-number" id="number" type="tel" name="number" placeholder="Номер, пожалуйста">
-          <label class="main-form__user-headline" for="mail">Адрес почты</label>
-          <input class="main-form__user-number" id="mail" type="email" name="mail" placeholder="Введите почту*" required>
-      </div>
+      <fieldset class="fieldset-none">
+        <legend class="visually-hidden">Контактная информация</legend>
+        <div class="input-field">
+          <label class="input-field__header" for="number">Номер телефона</label>
+          <input class="input-field__text" id="number" type="tel" name="number" placeholder="Номер, пожалуйста">
+        </div>
+        <div class="input-field">
+          <label class="input-field__header" for="mail">Адрес почты</label>
+          <input class="input-field__text" id="mail" type="email" name="mail" placeholder="Введите почту*" required>
+        </div>
+      </fieldset>
       <fieldset class="main-form__poll fieldset-none">
         <legend class="main__form__poll-header">С каким приложением путешествовали?</legend>
         <ul class="main-form__poll-list list-style-none">
@@ -103,22 +112,22 @@
   </main>
   <footer class="page-footer">
     <div class="page-footer__bottom-wrapper">
-      <a class="page-footer__logo" href="#">PINK</a>
+      <a class="logo--footer" href="#">PINK</a>
     </div>
     <ul class="social-list list-style-none social-list--footer">
       <li class="social-list__item social-list__item--footer">
-        <a class="social-list__link social-list__link--twitter social-list__link--footer" href="#">Twitter</a>
+        <a class="social-list__link social-list__link--twitter" href="#">Twitter</a>
       </li>
       <li class="social-list__item social-list__item--footer">
-        <a class="social-list__link social-list__link--facebook social-list__link--footer" href="#">Facebook</a>
+        <a class="social-list__link social-list__link--facebook" href="#">Facebook</a>
       </li>
       <li class="social-list__item social-list__item--footer">
-        <a class="social-list__link social-list__link--youtube social-list__link--footer" href="#">Youtube</a>
+        <a class="social-list__link social-list__link--youtube" href="#">Youtube</a>
       </li>
     </ul>
-    <div class="page-footer__copyright-wrapper">
-      <p class="page-footer__copyright--text">Разработано</p>
-      <a class="page-footer__copyright--link" href="#">Htmlacademy</a>
+    <div class="page-footer__copyright">
+      <p class="page-footer__copyright page-footer__copyright--text">Разработано</p>
+      <a class="page-footer__copyright page-footer__copyright--link" href="#">Htmlacademy</a>
     </div>
   </footer>
 </body>

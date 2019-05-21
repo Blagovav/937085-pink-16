@@ -6,18 +6,3 @@
   padding-top: 20px;
 }
 
-.comment__toggle {
-  font-size: 0;
-  background-color: #283645;
-  border: 2px solid #ffffff;
-  opacity: 0.3;
-  border-radius: 100px;
-  width: 15px;
-  height: 15px;
-  cursor: pointer;
-}
-
-.comment__togle:hover:focus:active {
-  border: 2px solid #283645;
-  background-color: #ffffff;
-}
