@@ -19,3 +19,19 @@
   width: 307px;
   height: 284px;
 }
+
+@media (min-width: $tablet-width) {
+  .backdrop {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position-y: 0;
+    background-position-x: 50%;
+    padding-top: 618px;
+    position: relative;
+  }
+
+  .backdrop::before {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    width: 887px;
+    height: 545px;
+  }
+}

@@ -1,0 +1,59 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    position: relative;
+    margin: 0;
+    display: block;
+    padding-left: 300px;
+    text-align: left;
+    padding-top: 102px;
+    padding-bottom: 83px;
+  }
+
+  .effect__item {
+    padding-right: 50px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .effect__header {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 24px;
+    padding-right: 40px;
+  }
+
+  .effect__link {
+    text-decoration: underline;
+    color: $like-color;
+    line-height: 24px;
+    cursor: pointer;
+  }
+
+  .effect::after {
+    position: absolute;
+    content: "24";
+    background-image: url("../img/icon-editor-diagram-fill.svg");
+    left: 34px;
+    top: 160px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 202px;
+    height: 202px;
+  }
+
+  .effect::before {
+    position: absolute;
+    content: "";
+    background-image: url("../img/icon-timer.svg");
+    left: 15px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: translateY(-50% 50%);
+    width: 238px;
+    height: 276px;
+  }
+}

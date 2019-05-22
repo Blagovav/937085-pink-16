@@ -14,3 +14,11 @@
   width: 147px;
   height: 40px;
 }
+
+@media (min-width: $tablet-width) {
+  .logo {
+    background-image: url("../img/logo-pink-white-tablet.svg");
+    width: 147px;
+    height: 40px;
+  }
+}

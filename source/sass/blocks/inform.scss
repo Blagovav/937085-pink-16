@@ -32,3 +32,34 @@
 .inform__lisy-wrapper {
   padding-top: 90px;
 }
+
+@media (min-width: $tablet-width) {
+  .inform__text {
+    font-size: 40px;
+    font-weight: 300;
+    padding-right: 38px;
+    padding-left: 38px;
+  }
+
+  .inform__list-wrapper {
+    padding-top: 146px;
+  }
+
+  .inform__list {
+    text-align: left;
+    padding-right: 20px;
+    padding-left: 300px;
+    padding-bottom: 40px;
+  }
+
+  .inform__list::before {
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    content: "";
+    bottom: 0;
+    transform: translateX(-131%);
+    width: 268px;
+    height: 482px;
+  }
+}

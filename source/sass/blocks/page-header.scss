@@ -37,3 +37,10 @@
   background-repeat: no-repeat;
   background-position-y: -65px;
 }
+
+@media (min-width: $tablet-width) {
+  .page-header__top-wrapper {
+    padding-top: 27px;
+    padding-bottom: 42px;
+  }
+}
