@@ -15,3 +15,23 @@
   background-color: #283645;
   border: 2px solid #ffffff;
 }
+
+@media (min-width: $tablet-width) {
+  .toggle {
+    font-size: 0;
+    background-color: #283645;
+    border: 2px solid #ffffff;
+    opacity: 0.3;
+    border-radius: 100px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+
+  .togle:hover,
+  .toggle:focus,
+  .toggle:active {
+    border: 2px solid #283645;
+    background-color: #ffffff;
+  }
+}

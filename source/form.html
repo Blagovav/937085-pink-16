@@ -32,7 +32,7 @@
   <main class="page-main">
     <p class="page-main__msg">Конкурс на самое безбашенное путешествие с Пинк</p>
     <form class="main-form" method="post" action="https://echo.htmlacademy.ru/">
-      <p class="main-form__msg">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту карту!</p>
+      <p class="main-form__msg">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту карту!<p class="main-form__msg main-form__msg--tablet">Пожалуйста, заполните форму ниже:<p></p>
       <div class ="input-field">
         <label class="input-field__header" for="surname">Фамилия:</label>
         <input class="input-field__text" id="surname" type="text" name="surname" placeholder="Укажите фамилию*" required>
@@ -45,67 +45,69 @@
         <label class="input-field__header" for="patronymic">Отчество:</label>
         <input class="input-field__text" id="patronymic" type="text" name="patronymic" placeholder="Ну и отчество тоже">
       </div>
-      <fieldset class="main-form__progress fieldset-none">
-        <legend class="main-form__progress-header">Ваши безбашенные достижения в путешествии</legend>
-        <ul class="main-form__progress-list list-style-none">
-          <li class="main-form__progress-item">
-            <input class="main-form__progress-check visually-hidden" type="checkbox" id="selfi">
-            <label class="main-form__option" for="selfi">Сделал селфи с акулой</label>
-          </li>
-          <li class="main-form__progress-item">
-              <input class="main-form__progress-check visually-hidden" type="checkbox" id="beach">
-              <label class="main-form__option" for="beach">Обгорел на пляже</label>
-          </li>
-          <li class="main-form__progress-item">
-              <input class="main-form__progress-check visually-hidden" type="checkbox" id="chak">
-              <label class="main-form__option" for="chak">Видел Чака Норриса</label>
-          </li>
-          <li class="main-form__progress-item">
-              <input class="main-form__progress-check visually-hidden" type="checkbox" id="souvenir">
-              <label class="main-form__option" for="souvenir">Накупил сувениров</label>
-          </li>
-          <li class="main-form__progress-item">
-              <input class="main-form__progress-check visually-hidden" type="checkbox" id="tower">
-              <label class="main-form__option" for="tower">Удержал башню</label>
-          </li>
-          <li class="main-form__progress-item">
-              <input class="main-form__progress-check visually-hidden" type="checkbox" id="hotel">
-              <label class="main-form__option" for="hotel">Разгромил отель</label>
-          </li>
-        </ul>
-      </fieldset>
-      <fieldset class="fieldset-none">
-        <legend class="visually-hidden">Контактная информация</legend>
-        <div class="input-field">
-          <label class="input-field__header" for="number">Номер телефона</label>
-          <input class="input-field__text" id="number" type="tel" name="number" placeholder="Номер, пожалуйста">
-        </div>
-        <div class="input-field">
-          <label class="input-field__header" for="mail">Адрес почты</label>
-          <input class="input-field__text" id="mail" type="email" name="mail" placeholder="Введите почту*" required>
-        </div>
-      </fieldset>
-      <fieldset class="main-form__poll fieldset-none">
-        <legend class="main__form__poll-header">С каким приложением путешествовали?</legend>
-        <ul class="main-form__poll-list list-style-none">
-          <li class="main-form__poll-list-item">
-            <input type="radio" class="main-form__poll-radio visually-hidden" name="form-radio"  id="ios" value="pink для ios">
-            <label class="main-form__radio" for="ios">Pink для IOS</label>
-          </li>
-          <li class="main-form__poll-list-item">
-            <input type="radio" class="main-form__poll-radio visually-hidden" name="form-radio"  id="android" value="pink для android">
-            <label class="main-form__radio" for="android">Pink для Android</label>
-          </li>
-          <li class="main-form__poll-list-item">
-            <input type="radio" class="main-form__poll-radio visually-hidden" name="form-radio"  id="windows" value="pink для ios">
-            <label class="main-form__radio" for="windows">Windows Phone</label>
-          </li>
-        </ul>
-      </fieldset>
-      <div class="main-form__user-msg">
-        <label class="main-form__user-header" for="write">Опишите свои эмоции</labe>
-        <textarea class="main-form__textarea" id="write" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      <div class="main-form__tablet-wrapper">
+        <fieldset class="main-form__progress fieldset-none">
+          <legend class="main-form__progress-header">Ваши безбашенные достижения в путешествии</legend>
+          <ul class="main-form__progress-list list-style-none">
+            <li class="main-form__progress-item">
+              <input class="main-form__progress-check visually-hidden" type="checkbox" id="selfi">
+              <label class="main-form__option" for="selfi">Сделал селфи с акулой</label>
+            </li>
+            <li class="main-form__progress-item">
+                <input class="main-form__progress-check visually-hidden" type="checkbox" id="beach">
+                <label class="main-form__option" for="beach">Обгорел на пляже</label>
+            </li>
+            <li class="main-form__progress-item">
+                <input class="main-form__progress-check visually-hidden" type="checkbox" id="chak">
+                <label class="main-form__option" for="chak">Видел Чака Норриса</label>
+            </li>
+            <li class="main-form__progress-item">
+                <input class="main-form__progress-check visually-hidden" type="checkbox" id="souvenir">
+                <label class="main-form__option" for="souvenir">Накупил сувениров</label>
+            </li>
+            <li class="main-form__progress-item">
+                <input class="main-form__progress-check visually-hidden" type="checkbox" id="tower">
+                <label class="main-form__option" for="tower">Удержал башню</label>
+            </li>
+            <li class="main-form__progress-item">
+                <input class="main-form__progress-check visually-hidden" type="checkbox" id="hotel">
+                <label class="main-form__option" for="hotel">Разгромил отель</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="fieldset-none">
+          <legend class="visually-hidden">Контактная информация</legend>
+          <div class="input-field">
+            <label class="input-field__header" for="number">Номер телефона</label>
+            <input class="input-field__text" id="number" type="tel" name="number" placeholder="Номер, пожалуйста">
+          </div>
+          <div class="input-field">
+            <label class="input-field__header" for="mail">Адрес почты</label>
+            <input class="input-field__text" id="mail" type="email" name="mail" placeholder="Введите почту*" required>
+          </div>
+        </fieldset>
+        <fieldset class="main-form__poll fieldset-none">
+          <legend class="main__form__poll-header">С каким приложением путешествовали?</legend>
+          <ul class="main-form__poll-list list-style-none">
+            <li class="main-form__poll-list-item">
+              <input type="radio" class="main-form__poll-radio visually-hidden" name="form-radio"  id="ios" value="pink для ios">
+              <label class="main-form__radio" for="ios">Pink для IOS</label>
+            </li>
+            <li class="main-form__poll-list-item">
+              <input type="radio" class="main-form__poll-radio visually-hidden" name="form-radio"  id="android" value="pink для android">
+              <label class="main-form__radio" for="android">Pink для Android</label>
+            </li>
+            <li class="main-form__poll-list-item">
+              <input type="radio" class="main-form__poll-radio visually-hidden" name="form-radio"  id="windows" value="pink для ios">
+              <label class="main-form__radio" for="windows">Windows Phone</label>
+            </li>
+          </ul>
+        </fieldset>
       </div>
+      <fieldset class="main-form__user-msg fieldset-none">
+        <legend class="main__form__user-header" for="write">Опишите свои эмоции</legend>
+        <textarea class="main-form__textarea" id="write" name="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+      </fieldset>
       <button class="main-form__button" type="submit">Отправить форму</button>
       <p class="main-form__final-msg"><span class="main-form__star">*</span>-обязательные поля</p>
     </form>

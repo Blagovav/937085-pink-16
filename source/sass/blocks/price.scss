@@ -12,8 +12,34 @@
   border-spacing: 0;
 }
 
+.price__service {
+  text-align: left;
+}
+
+.price__item--no::after {
+  position: absolute;
+  content: "";
+  width: 27px;
+  height: 26px;
+  background-image: url("../img/icon-no.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transform: translateY(-50% 50%);
+  right: 39px;
+}
+
+.price__item--yes::after {
+  position: absolute;
+  content: "";
+  width: 22px;
+  height: 21px;
+  background-image: url("../img/icon-yes.svg");
+  background-repeat: no-repeat;
+  transform: translateY(-50% 50%);
+  right: 39px;
+}
+
 .price__toggle {
-  margin: 0;
   padding-top: 45px;
   padding-bottom: 50px;
   background-color: $post-color;
@@ -43,11 +69,12 @@
 }
 
 .price__item {
+  position: relative;
   box-sizing: border-box;
   padding-top: 16px;
   padding-bottom: 13px;
   padding-left: 22px;
-  padding-right: 22px;
+  padding-right: 100px;
   min-width: 276px;
   font-size: 14px;
   line-height: 30px;

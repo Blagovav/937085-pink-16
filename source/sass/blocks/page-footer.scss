@@ -90,3 +90,37 @@
   left: 50%;
   transform: translateX(-50%);
 }
+
+.page-footer__tablet {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .page-footer__msg {
+    font-size: 40px;
+    font-weight: 300;
+    color: #283645;
+    padding-right: 146px;
+    padding-left: 148px;
+  }
+
+  .page-footer__tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 51px;
+  }
+
+  .page-footer__copyright-wrapper {
+    display: flex;
+  }
+
+  .page-footer__copyright--text {
+    padding: 0;
+  }
+
+  .page-footer__bottom-wrapper {
+    margin: 0;
+  }
+}
